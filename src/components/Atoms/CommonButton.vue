@@ -5,11 +5,7 @@ type Props = {
   onClick?: () => void;
 };
 
-const { label, type, onClick } = withDefaults(defineProps<Props>(), {
-  label: "Button",
-  type: "button",
-  onClick: () => {},
-});
+const { label, type = "button", onClick } = defineProps<Props>();
 </script>
 
 <template>
