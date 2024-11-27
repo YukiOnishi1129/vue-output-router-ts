@@ -17,7 +17,10 @@ const todo = originTodoList
 
 <template>
   <BaseLayout title="Todo Detail">
-    <div v-if="todo" class="container">
+    <div
+      v-if="todo"
+      class="container"
+    >
       <div class="area">
         <InputForm
           v-model="todo.title"

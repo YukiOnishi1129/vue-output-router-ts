@@ -27,15 +27,27 @@ const handleSubmitAddTodo = (e: Event) => {
 
 <template>
   <BaseLayout title="Create Todo">
-    <form class="container" @submit.prevent="handleSubmitAddTodo">
+    <form
+      class="container"
+      @submit.prevent="handleSubmitAddTodo"
+    >
       <div class="area">
-        <InputForm name="title" placeholder="Title" />
+        <InputForm
+          name="title"
+          placeholder="Title"
+        />
       </div>
       <div class="area">
-        <TextArea name="content" placeholder="Content" />
+        <TextArea
+          name="content"
+          placeholder="Content"
+        />
       </div>
       <div class="area">
-        <CommonButton type="submit" label="Create" />
+        <CommonButton
+          type="submit"
+          label="Create"
+        />
       </div>
     </form>
   </BaseLayout>

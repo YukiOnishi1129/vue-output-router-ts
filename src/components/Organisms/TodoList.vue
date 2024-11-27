@@ -16,17 +16,27 @@ const handleDelete = (id: string, title: string) => {
 
 <template>
   <ul class="list">
-    <li v-for="(todo, index) in showTodoList" :key="index" class="todo">
+    <li
+      v-for="(todo, index) in showTodoList"
+      :key="index"
+      class="todo"
+    >
       <span class="task">{{ todo.title }}</span>
       <div class="area">
         <div class="far">
           <router-link :to="{ name: 'detail', params: { id: todo.id } }">
-            <font-awesome-icon class="far" icon="fa-circle-info" />
+            <font-awesome-icon
+              class="far"
+              icon="fa-circle-info"
+            />
           </router-link>
         </div>
         <div class="far">
           <router-link :to="{ name: 'edit', params: { id: todo.id } }">
-            <font-awesome-icon class="far" icon="fa-pen-to-square" />
+            <font-awesome-icon
+              class="far"
+              icon="fa-pen-to-square"
+            />
           </router-link>
         </div>
 

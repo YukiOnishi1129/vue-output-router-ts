@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { defineProps } from "vue";
+
 type Props = {
   label?: string;
   type?: "reset" | "submit" | "button";
@@ -9,7 +11,11 @@ const { label, type = "button", onClick } = defineProps<Props>();
 </script>
 
 <template>
-  <button className="button" :type="type" @click="onClick">
+  <button
+    className="button"
+    :type="type"
+    @click="onClick"
+  >
     {{ label }}
   </button>
 </template>

@@ -12,7 +12,10 @@ const searchKeyword = inject(searchKeywordInjectionKey);
 <template>
   <BaseLayout title="TodoList">
     <div className="container">
-      <section v-if="searchKeyword !== undefined" class="area">
+      <section
+        v-if="searchKeyword !== undefined"
+        class="area"
+      >
         <InputForm
           v-model="searchKeyword"
           :placeholder="`Search Keyword`"

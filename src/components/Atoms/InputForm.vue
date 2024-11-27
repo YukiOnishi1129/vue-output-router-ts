@@ -29,7 +29,7 @@ defineEmits<Emits>();
       $emit('update:modelValue', ($event.target as HTMLInputElement).value)
     "
     @keydown="onKeydown"
-  />
+  >
 </template>
 
 <style scoped>
