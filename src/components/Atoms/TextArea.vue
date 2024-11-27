@@ -1,7 +1,7 @@
 <script setup lang="ts">
 type Props = {
   disabled?: boolean;
-  modelValue: string;
+  modelValue?: string;
   name: string;
   placeholder?: string;
 };

@@ -1,7 +1,7 @@
 <script setup lang="ts">
-// import TodoListTemplate from "../components/Templates/TodoListTemplate.vue";
+import TodoCreateTemplate from "../components/Templates/TodoCreateTemplate.vue";
 </script>
 
 <template>
-  <!-- <TodoListTemplate /> -->
+  <TodoCreateTemplate />
 </template>
