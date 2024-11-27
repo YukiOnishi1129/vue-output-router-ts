@@ -12,3 +12,5 @@ export const INIT_TODO_LIST: Array<TodoType> = [
     content: "Todo2の内容",
   },
 ];
+
+export const INIT_UNIQUE_ID = INIT_TODO_LIST.length;

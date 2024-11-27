@@ -1,10 +1,9 @@
 <script setup lang="ts">
-import { ref } from "vue";
-import InputForm from "./components/Atoms/InputForm.vue";
-
-const value = ref("");
+import TodoProvider from "./providers/TodoProvider.vue";
 </script>
 
 <template>
-  <InputForm v-model="value" name="value" />
+  <TodoProvider>
+    <router-view />
+  </TodoProvider>
 </template>
